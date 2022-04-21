@@ -5,7 +5,9 @@ env:
   WORKSPACE_NAME: "${{ values.workspace_name }}"
 
 jobs:
-  test:
+  provision:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "It runs! workspace: $WORKSPACE_NAME"
+    - name: "Provisioning Workspace"
+      run: echo "WORKSPACE - $WORKSPACE_NAME!"
+      
