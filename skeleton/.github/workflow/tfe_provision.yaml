@@ -1,0 +1,11 @@
+name: Terraform enterprise provisioning
+on: workflow_dispatch
+
+env:
+  WORKSPACE_NAME: "${{ values.workspace_name }}"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "It runs! workspace: ${WORKSPACE_NAME}"
