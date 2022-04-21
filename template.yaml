@@ -9,7 +9,7 @@ metadata:
     - terraform
 spec:
   owner: vitali.stsepaniuk@bain.com
-  type: devops
+  type: service
   parameters:
     - title: Workspace details
       required:
