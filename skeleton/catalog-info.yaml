@@ -12,3 +12,6 @@ spec:
   type: devops
   lifecycle: experimental
   owner: ${{values.owner | dump}}
+  {%- if values.dependencyOf %}
+  dependencyOf: ${{ values.dependencyOf | dump }}
+  {%- endif %}
